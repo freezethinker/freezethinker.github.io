@@ -684,7 +684,6 @@ h2 {
 .main__project,
 .main__project--first {
   margin-bottom: 20px;
-  width: 75%;
 }
 
 @media (min-width: 1024px) {
