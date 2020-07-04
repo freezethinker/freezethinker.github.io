@@ -736,8 +736,17 @@ h2 {
   line-height: 26px;
 }
 
+.main__project-description a:hover {
+  opacity: 0.6;
+
+}
+
+.main__project-description a {
+  color: #1560FB;
+  transition: 0.3s opacity ease;
+}
+
 .main__list {
-  /*clear: both;*/
   padding: 0;
   list-style-type: none;
 }
@@ -802,16 +811,8 @@ h2 {
   margin: 0;
 }
 
-.main__skill a {
-  transition: 0.3s opacity ease;
-}
-
 @media (min-width: 1024px) {
   .main__skill {
     margin-left: 110px;
   }
-}
-
-.main__skill:hover a {
-  opacity: 0.6;
 }
