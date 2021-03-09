@@ -258,30 +258,8 @@ h2 {
   }
 }
 
-.opl {
-  position: relative;
-  top: 20px;
-  left: 0px;
-  z-index: 99999;
-  transition: 0.3s opacity ease;
-}
-
-.opl:hover {
-  opacity: 0.8;
-}
-
-.opl a {
-  width: 73px;
-  height: 56px;
-  text-indent: -9999px;
-  display: block;
-  background: url("https://s3.amazonaws.com/onepagelove/one-page-love-award-left.png") no-repeat;
-}
-
 .container-info {
-  display: inline-block;
   position: relative;
-  width: 100%;
   min-height: 490px;
   background-color: #1560FB;
 }
@@ -293,13 +271,14 @@ h2 {
     left: 0;
     top: 0;
     height: 100%;
-    width: 50%;
+    width: 35%;
   }
 }
 
 .container-main {
-  display: inline-block;
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
+  overflow: auto;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -309,7 +288,7 @@ h2 {
     top: 0;
     right: 0;
     height: 100%;
-    width: 45%;
+    width:60%;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
@@ -317,7 +296,6 @@ h2 {
 }
 
 .info-main {
-  margin: 15px 0 0 0;
   opacity: 0;
   width: 100%;
   animation: fadeIn ease-in 1;
@@ -337,12 +315,12 @@ h2 {
 
 .info__headshot,
 .info__headshot-img {
+  padding-top: 10px;
   display: block;
   margin: auto;
   width: 170px;
   height: 170px;
   border-radius: 200px;
-  box-shadow: 0 5px 10px #0A4DD9;
 }
 
 .info__tag {
@@ -661,24 +639,16 @@ h2 {
   line-height: 26px;
 }
 
+.main__copy b {
+  background-color: #E9F0FF;
+  font-weight: 400;
+}
+
 @media (min-width: 1024px) {
   .main__copy {
     float: left;
     width: 75%;
-    max-width: 500px;
   }
-}
-
-.main__copy a {
-  padding: 0 4px 2px 4px;
-  border-bottom: 2px solid #A3C0FC;
-  font-weight: 400;
-  transition: background-color 0.3s, border-color 0.3s;
-}
-
-.main__copy a:hover {
-  background-color: #E9F0FF;
-  border-color: #1560FB;
 }
 
 .main__project,
@@ -690,7 +660,7 @@ h2 {
   .main__project,
   .main__project--first {
     float: left;
-    max-width: 500px;
+    width: 75%;
     margin-left: 110px;
   }
 }
@@ -736,14 +706,28 @@ h2 {
   line-height: 26px;
 }
 
-.main__project-description a:hover {
-  opacity: 0.6;
-
-}
-
 .main__project-description a {
   color: #1560FB;
-  transition: 0.3s opacity ease;
+  padding: 0 4px 2px 4px;
+  font-weight: 400;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.main__project-description a:hover {
+  background-color: #E9F0FF;
+  border-color: #1560FB;
+}
+
+.main__copy a {
+  padding: 0 4px 2px 4px;
+  border-bottom: 2px solid #A3C0FC;
+  font-weight: 400;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.main__copy a:hover {
+  background-color: #E9F0FF;
+  border-color: #1560FB;
 }
 
 .main__list {
@@ -779,7 +763,6 @@ h2 {
 
 @media (min-width: 1024px) {
   .main__experience {
-    max-width: 500px;
     margin-left: 110px;
   }
   .main__experience:first-of-type {
@@ -803,8 +786,28 @@ h2 {
   line-height: 26px;
 }
 
-.main__experience-info-position {
+.main__experience-info-company .main__experience-info-position {
   display: block;
+  width: 100%;
+  font-weight: 400;
+}
+
+@media (min-width: 400px) {
+  .main__experience-info-company .main__experience-info-position {
+    display: block;
+    width: 100%;
+  }
+
+  .main__experience-info-company .main__experience-info-position .main__experience-info-position-name {
+    float: left;
+    font-weight: 400;
+  }
+
+  .main__experience-info-company .main__experience-info-position .main__experience-info-position-duration {
+    float: right;
+    font-weight: 400;
+    padding-left: 50px;
+  }
 }
 
 .main__skill {
