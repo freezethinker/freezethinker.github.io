@@ -644,6 +644,11 @@ h2 {
   font-weight: 400;
 }
 
+.main__project-description b {
+  background-color: #E9F0FF;
+  font-weight: 400;
+}
+
 @media (min-width: 1024px) {
   .main__copy {
     float: left;
