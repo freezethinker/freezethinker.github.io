@@ -87,14 +87,8 @@ h2 {
 #fadeUp-animation,
 .info-footer__country,
 .info-footer__social-icon,
-.info-footer__social-icon--dribbble,
-.info-footer__social-icon--linkedin,
-.info-footer__social-icon--instagram,
-.info-footer__social-icon--github,
-.info-footer__social-icon--twitter,
 .main__container-about,
 .main__container-projects,
-.main__container-clients,
 .main__container-experience,
 .main__container-skill,
 .main__skill {
@@ -467,7 +461,8 @@ h2 {
   opacity: 0.6;
 }
 
-.info-footer__country-text:hover {
+.info-footer__country-text:hover,
+.info-footer__social-icon:hover {
   opacity: 1;
 }
 
@@ -478,85 +473,20 @@ h2 {
   height: 27px;
 }
 
-.info-footer__social-icon,
-.info-footer__social-icon--dribbble,
-.info-footer__social-icon--linkedin,
-.info-footer__social-icon--instagram,
-.info-footer__social-icon--github,
-.info-footer__social-icon--twitter {
+.info-footer__social-icon{
   float: right;
   margin-left: 10px;
   padding-top: 4px;
   color: white;
   text-decoration: none;
-  float: right;
-  transition: 0.3s color ease;
-}
-
-.info-footer__social-icon:hover,
-.info-footer__social-icon--dribbble:hover,
-.info-footer__social-icon--linkedin:hover,
-.info-footer__social-icon--instagram:hover,
-.info-footer__social-icon--github:hover,
-.info-footer__social-icon--twitter:hover {
-  color: #A3C0FC;
-}
-
-.info-footer__social-icon--dribbble {
-  animation-delay: 1.2s;
-}
-
-@media (max-width: 768px) {
-  .info-footer__social-icon--dribbble {
-    animation-delay: 0.6s;
-  }
-}
-
-.info-footer__social-icon--linkedin {
-  animation-delay: 1.4s;
-}
-
-@media (max-width: 768px) {
-  .info-footer__social-icon--linkedin {
-    animation-delay: 0.8s;
-  }
-}
-
-.info-footer__social-icon--instagram {
-  animation-delay: 1.6s;
-}
-
-@media (max-width: 768px) {
-  .info-footer__social-icon--instagram {
-    animation-delay: 1s;
-  }
-}
-
-.info-footer__social-icon--github {
-  animation-delay: 1.8s;
-}
-
-@media (max-width: 768px) {
-  .info-footer__social-icon--github {
-    animation-delay: 1.2s;
-  }
-}
-
-.info-footer__social-icon--twitter {
-  animation-delay: 2s;
-}
-
-@media (max-width: 768px) {
-  .info-footer__social-icon--twitter {
-    animation-delay: 1.4s;
-  }
+  transition: 0.3s opacity ease;
+  opacity: 0.6;
 }
 
 .main__container,
 .main__container-skills,
 .main__container-about,
 .main__container-projects,
-.main__container-clients,
 .main__container-experience,
 .main__container-skill {
   clear: both;
@@ -582,16 +512,6 @@ h2 {
 @media (max-width: 768px) {
   .main__container-projects {
     animation-delay: 1.2s;
-  }
-}
-
-.main__container-clients {
-  animation-delay: 1s;
-}
-
-@media (max-width: 768px) {
-  .main__container-clients {
-    animation-delay: 1.4s;
   }
 }
 
