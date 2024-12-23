@@ -88,8 +88,8 @@ h2 {
 .info-footer__country,
 .info-footer__social-icon,
 .main__container-about,
-.main__container-projects,
 .main__container-experience,
+.main__container-projects,
 .main__container-skill,
 .main__skill {
   opacity: 0;
@@ -486,8 +486,8 @@ h2 {
 .main__container,
 .main__container-skills,
 .main__container-about,
-.main__container-projects,
 .main__container-experience,
+.main__container-projects,
 .main__container-skill {
   clear: both;
   display: block;
@@ -506,22 +506,22 @@ h2 {
 }
 
 .main__container-projects {
-  animation-delay: 0.8s;
-}
-
-@media (max-width: 768px) {
-  .main__container-projects {
-    animation-delay: 1.2s;
-  }
-}
-
-.main__container-experience {
   animation-delay: 1.2s;
 }
 
 @media (max-width: 768px) {
-  .main__container-experience {
+  .main__container-projects {
     animation-delay: 1.6s;
+  }
+}
+
+.main__container-experience {
+  animation-delay: 0.8s;
+}
+
+@media (max-width: 768px) {
+  .main__container-experience {
+    animation-delay: 1.2s;
   }
 }
 
